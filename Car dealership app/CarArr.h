@@ -27,13 +27,13 @@ public:
     // Отображение данных
     void print() const;
 
-    // Сортировка (шаблонный метод)
+    // Сортировка
     template <typename Compare>
     void sort(Compare comp) {
         std::sort(arr_.begin(), arr_.end(), comp);
     }
 
-    // Поиск (шаблонный метод)
+    // Поиск
     template <typename Predicate>
     std::vector<Car> find(Predicate pred) const {
         std::vector<Car> results;
